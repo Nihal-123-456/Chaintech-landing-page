@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: sans-serif;
+  }
+  nav{
+    height: 80px;
+    width: 100%;
+    gap: 15%;
+  }
+  .logo-img{
+    width: 10%;
+    min-width: 120px;
+  }
+ 
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 8px;
+  }
+  a.active, a:hover{
+    color: #7fca35;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  .banner-heading{
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    width: 60%;
+  }
+  .company-name{
+    background-image: linear-gradient(#dbff66, #d4ff5e, #8cff5e); 
+    background-clip: text; 
+    color: transparent; 
+  }
+  .banner-description{
+    font-size: 14px;
+    font-weight: 500;
+    width: 40%;
+  }
+  .banner-btn{
+    margin-top: 35px;
+  }
+  .banner-btn a{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 20px;
+  }
+  .banner-btn a:hover{
+    background-color: #7fca35;
+    color: black !important;
+  }
+  .arrow-btns{
+    margin-top: -15px;
+    margin-right: 20px;
+    float: right;
+  }
+  .arrow-btn{
+    background-color: white;
+    border-radius: 50%;
+    padding: 6px;
+  }
+  .arrow-btn:hover{
+    border: 2px solid black;
+    background-color: rgb(210, 208, 208);
+    transition: .5s;
+  }
+  .arrow-right{
+    margin-top: 2px;
+    margin-left: 16px;
+  }
+  .srvc-card{
+    background-color: #cfffe4;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 240px;
+  }
+  .divider{
+    width: 100%;
+    background-color: black;
+    height: 2px;
+  }
+  .srvc-card-img{
+    width: 100%;
+    max-width: 200px;
+    height: 156px;
+    object-fit: cover;
+  }
+  .card-btn{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .card-btn button{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 20px;
+  }
+  .card-btn button:hover{
+    background-color: #8cff5e;
+    transition: .5s;
+  }
+  hr{
+    background-color: white;
+    height: 2px;
+  }
+  @media (max-width: 952px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #252a2e;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a.active, a:hover{
+        color: #7fca35;
+        transition: .5s;
+      }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    .banner-heading{
+        font-size: 35px;
+        width: 80%;
+      }
+      .banner-description{
+        width: 80%;
+      }
+      .arrow-btns{
+        margin: 10px 0;
+        float: none;
+      }
+  }
